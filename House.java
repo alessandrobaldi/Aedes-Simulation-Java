@@ -67,6 +67,12 @@ public class House {
         Mosquito mosquito = new Mosquito();
         mosquitos.add(mosquito);
     }
+    
+    void addMosquitoToHouse(House add) {
+        Mosquito mosquito = new Mosquito();
+        mosquito.setBorn(add);
+        mosquitos.add(mosquito);
+    }
 
     public List<House> getNeighbors() {
         return neighbors;

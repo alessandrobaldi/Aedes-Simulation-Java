@@ -12,7 +12,16 @@ package simulationjava;
 public class Mosquito {
    private int days = 0;
    private boolean control = false;
+   private House born;
 
+    public House getBorn() {
+        return born;
+    }
+
+    public void setBorn(House born) {
+        this.born = born;
+    }
+   
     public int getDays() {
         return days;
     }
